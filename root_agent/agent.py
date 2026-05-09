@@ -5,7 +5,9 @@ from google.adk.agents import LlmAgent
 from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset
 from google.adk.tools.mcp_tool.mcp_session_manager import StreamableHTTPConnectionParams
 
-MAPS_API_KEY = os.environ.get("MAPS_API_KEY", "AIzaSyAsyEultV_xe-aCbIxGzT7-9TKIZ1C6lAg")
+MAPS_API_KEY = os.environ.get("MAPS_API_KEY")
+if not MAPS_API_KEY:
+    raise RuntimeError("MAPS_API_KEY is required")
 
 maps_toolset = MCPToolset(
     connection_params=StreamableHTTPConnectionParams(
