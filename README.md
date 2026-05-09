@@ -22,7 +22,7 @@ The agent autonomously decides which tools to call, queries **BigQuery** for int
 
 ## 🏗️ Architecture
 
-\`\`\`mermaid
+```mermaid
 flowchart LR
     subgraph INPUT["INPUT"]
         direction TB
@@ -61,7 +61,7 @@ flowchart LR
     AGENT -->|"Intelligence Response"| WEBUI
     AGENT -- "API Key" --> MAPS_EP
     AGENT -- "OAuth Bearer" --> BQ_EP
-\`\`\`
+```
 
 ### How It Works
 
