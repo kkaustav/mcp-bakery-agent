@@ -1,4 +1,4 @@
-cat > ~/mcp_bakery_app/README.md << 'EOF'
+
 # 🥐 Bakery Location Intelligence Agent
 
 > An AI-powered location intelligence agent built with **Google ADK**, **Gemini 3.1 Pro**, and **MCP servers** (BigQuery + Google Maps) — helping bakery owners make smarter decisions about foot traffic, competitor locations, pricing, and customer demographics.
